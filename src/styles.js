@@ -22,6 +22,7 @@ export const Image = styled.div`
     overflow:hidden;
     img{
         object-fit:cover;
+        margin-left:5rem;
 }
 `
 
