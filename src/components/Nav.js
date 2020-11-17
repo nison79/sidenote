@@ -25,12 +25,12 @@ const Nav = () => {
 
 const StyledNav = styled.nav`
 
-    min-height:5vh;
+    min-height:4vh;
     display:flex;
     margin: auto;
     justify-content:space-between;
     align-items:center;
-    padding: 1rem 10rem;
+    padding: 1rem 4rem;
     background-color:#282828;
     a{
         color:white;
@@ -42,9 +42,11 @@ const StyledNav = styled.nav`
     }
 
     #logo{
-        font-size:1.8rem;
-        font-family: 'Lobster' , cursive;
-        font-weight:lighter;
+        font-size:1.3rem;
+        font-family: 'Poppins' ,san-serif;
+        font-weight:bolder;
+        color:  #41EAD4;
+        
     }
     li{
         padding-left:10rem;
