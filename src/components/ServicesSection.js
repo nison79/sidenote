@@ -7,12 +7,18 @@ import diagram from '../images/diagram.png'
 import team from '../images/team.png'
 //styles
 import styled from 'styled-components'
-import {About,Description,Image,Hide} from '../styles'
+import {About,Description,Image} from '../styles'
+
+import useScroll from './useScroll'
+import scrollReveal from '../scrollReveal'
+
+
 
 
 const ServicesSection = () => {
+    const [element ,controls] = useScroll();
     return (
-        <Services>
+        <Services ref={element} variants={scrollReveal} animate={controls} initial="hidden" >
             <Description>
                 <h2>High <span>quality </span>services</h2>
                 <Cards>
@@ -55,12 +61,12 @@ const ServicesSection = () => {
 
 const Services = styled(About)`
     h2{
-        padding-bottom:5rem;
+        padding-bottom:8rem;
 
     }
     p{
         width:70%;
-        padding: 2rem 0rem 4rem 0rem;
+        padding: 2rem 0rem 3rem 0rem;
     }
 
 `;
@@ -68,6 +74,9 @@ const Services = styled(About)`
 const Cards = styled.div`
     display:flex;
     flex-wrap:wrap;
+    @media (max-width:1300px) {
+        justify-content:center;
+    }
 
 
 `;

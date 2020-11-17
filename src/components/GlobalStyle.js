@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         background:#1b1b1b;
         font-family: 'Poppins', sans-serif;
+        overflow-x:hidden;
 
     }
 
@@ -63,6 +64,16 @@ span {
         font-weight:bold;
         color:#41EAD4;
 }
+
+
+html {
+    @media (max-width: 1700px ){
+        font-size: 75%;
+    }
+
+    
+}
+
 `;
 
 export default GlobalStyle

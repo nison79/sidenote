@@ -13,9 +13,16 @@ import fadeAnim from '../fadeAnim'
 import lineAnim from '../lineAnim'
 import sliderAnim from '../sliderAnim'
 import sliderContainer from '../sliderContainer'
+import  useScroll  from '../components/useScroll'
+import  useScroll2  from '../components/useScroll2'
+
+import ScrollTop from '../components/ScrollTop'
 
 
 const OurWork = () => {
+    const [element,controls] = useScroll();
+    const [element2,controls2] = useScroll2();
+    
     return (
         <StyledWork 
         variants={PageAnimation} 
@@ -30,7 +37,7 @@ const OurWork = () => {
                 <Frame3 variants={sliderAnim}></Frame3>
                 <Frame4 variants={sliderAnim}></Frame4>
             </motion.div>
-            <StyledImage>
+            <StyledImage >
                 <motion.h2 variants={fadeAnim}>The Girl</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/girl">
@@ -38,9 +45,9 @@ const OurWork = () => {
                 </Link>
             </StyledImage>
 
-            <StyledImage>
+            <StyledImage ref={element} variants={fadeAnim} animate={controls} initial="hidden">
                 <h2>The Mother</h2>
-                <div className="line"></div>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="work/mother">
                     <Hide>
                         <img src= {mother} alt="girl"></img>
@@ -48,13 +55,14 @@ const OurWork = () => {
                 </Link>
             </StyledImage>
 
-            <StyledImage>
+            <StyledImage ref={element2} variants={fadeAnim} animate={controls2} initial="hidden">
                 <h2>The Dog</h2>
-                <div className="line"></div>
+                <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/dog">
                     <img src= {dog} alt="girl"></img>
                 </Link>
             </StyledImage>
+            <ScrollTop />
         </StyledWork>
     )
 };
@@ -68,7 +76,7 @@ const StyledWork = styled(motion.div)`
     }
 
 `
-const StyledImage = styled.div`
+const StyledImage = styled(motion.div)`
     padding-bottom:10rem;
     .line{
         height:0.5rem;
