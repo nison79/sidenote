@@ -41,6 +41,11 @@ export const Image = styled.div`
         margin-left:5rem;
         z-index:2;
 }
+    @media (max-width: 1300px) {
+        img{
+        margin-left:0rem;
+    }
+
 `
 
 export const Hide = styled.div`
