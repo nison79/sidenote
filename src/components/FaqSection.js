@@ -14,7 +14,7 @@ const FaqSection = ( { children }) => {
     return (
         <div>
             <Faq variants = {scrollReveal} ref={element}  animate={controls} initial= "hidden">
-                <h2>Any Questions <span>FAQ</span></h2>
+                <h2> <span>FAQ</span></h2>
                 <AnimateSharedLayout>
                     <Toggle title = "How Do I Start ?">
                             <div className="answer">

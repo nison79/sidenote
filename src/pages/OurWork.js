@@ -38,7 +38,7 @@ const OurWork = () => {
                 <Frame4 variants={sliderAnim}></Frame4>
             </motion.div>
             <StyledImage >
-                <motion.h2 variants={fadeAnim}>The Girl</motion.h2>
+                <motion.h2 variants={fadeAnim}>Music Player</motion.h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/girl">
                     <motion.img variants={photoAnim} src= {el1} alt="girl"></motion.img>
@@ -46,7 +46,7 @@ const OurWork = () => {
             </StyledImage>
 
             <StyledImage ref={element} variants={fadeAnim} animate={controls} initial="hidden">
-                <h2>The Mother</h2>
+                <h2>Ignite Games </h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="work/mother">
                     <Hide>
@@ -56,7 +56,7 @@ const OurWork = () => {
             </StyledImage>
 
             <StyledImage ref={element2} variants={fadeAnim} animate={controls2} initial="hidden">
-                <h2>The Dog</h2>
+                <h2>YouTube Clone</h2>
                 <motion.div variants={lineAnim} className="line"></motion.div>
                 <Link to="/work/dog">
                     <img src= {dog} alt="girl"></img>
@@ -86,7 +86,7 @@ const StyledImage = styled(motion.div)`
     }
 
     img {
-        width:100%;
+        width:50%;
         height:70vh;
         object-fit:cover;
 

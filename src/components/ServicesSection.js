@@ -27,28 +27,28 @@ const ServicesSection = () => {
                             <img src={clock} alt="clock"></img>
                             <h3>Efficient</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>The goal is to deliver high quality products with the best technologies available. Top Speed web-apps-sites-platforms.Easy maintainable. Growing effortless  </p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <img src={team} alt="clock"></img>
                             <h3>TeamWork</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>The commitment to teamwork and communication is vital to our work ethics.</p>
                     </Card>
                     <Card >
                         <div className="icon">
                             <img src={diagram} alt="clock"></img>
                             <h3>Diagram</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Work with the top most wanted frameworks like ReactJs-GatsbyJs-Styled-Components-Framer Motion and other</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <img src={money} alt="clock"></img>
                             <h3>Affordable</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>High quality products doesn't have to be expensive.The goal is to manipulate the cost per case, so our clients will be free to adapt to their needs as it grows.</p>
                     </Card>
                 </Cards>
             </Description> 
@@ -66,7 +66,7 @@ const Services = styled(About)`
     }
     p{
         width:70%;
-        padding: 2rem 0rem 3rem 0rem;
+        padding: 3rem 0rem 3rem 0rem;
     }
 
 `;
@@ -88,11 +88,18 @@ const Card = styled.div`
         align-items:center;
         width:25px;
     }
+    img{
+        width:40px;
+    }
     h3{
+        font-size:1.5rem;
         margin-left:1rem;
-        background:white;
-        color:black;
+        
+        color:#41EAD4;
         padding:1rem;
+    }
+    p{
+        font-size:1rem;
     }
 `;
 

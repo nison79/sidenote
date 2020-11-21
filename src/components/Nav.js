@@ -11,7 +11,7 @@ const Nav = () => {
             <h1><Link to="/" id="logo" >SideNote</Link></h1>
             <ul>
                 <li>
-                    <Link to="/" >About Us</Link>
+                    <Link to="/" >About</Link>
                     <Line 
                         transition={{duration: 0.5}} 
                         initial={{width:"0%"}} 
@@ -20,7 +20,7 @@ const Nav = () => {
                 </li>
 
                 <li>
-                    <Link to="/work" >Our Work</Link>
+                    <Link to="/work" >Works</Link>
                     <Line 
                         transition={{duration: 0.5}} 
                         initial={{width:"0%"}} 
@@ -43,19 +43,20 @@ const Nav = () => {
 
 const StyledNav = styled.nav`
 
-    min-height:4vh;
+    min-height:1vh;
     display:flex;
     margin: auto;
     justify-content:space-between;
     align-items:center;
-    padding: 1rem 4rem;
+    padding: 0.5rem 4rem;
     background-color:#282828;
     position:sticky;
     top:0;
     z-index:10;
     a{
         color:white;
-        text-decoration:none;
+        text-decoration:none;4
+        font-size:0.9rem;
     }
     ul{
         display:flex;
@@ -63,7 +64,7 @@ const StyledNav = styled.nav`
     }
 
     #logo{
-        font-size:1.3rem;
+        font-size:1.1rem;
         font-family: 'Poppins' ,san-serif;
         font-weight:bolder;
         color:  #41EAD4;
@@ -72,8 +73,9 @@ const StyledNav = styled.nav`
     li{
         padding-left:10rem;
         position:relative;
+        
     }
-    @media (max-width:1300px){
+    @media (max-width:978px){
         flex-direction:column;
         padding: 2rem 1rem;
         #logo {
@@ -98,9 +100,10 @@ const Line = styled(motion.div)`
     background:#41EAD4;
     width:0%;
     position:absolute;
-    bottom:-80%;
+    bottom:-50%;
     left:60%;
-    @media (max-width:1300px){
+    border-radius:50px;
+    @media (max-width:978px){
         left:0%
     }
 
