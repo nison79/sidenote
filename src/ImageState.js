@@ -10,30 +10,30 @@ import dog2 from './images/dog2.png'
 export const ImageState = () => {
   return [
     {
-      title: "The Girl",
+      title: "Music-Player",
       mainImg: el1,
       secondaryImg: el2,
       url: "/work/girl",
       awards: [
         {
-          title: "Beautiful Girl",
+          title: "Chill Music",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Enjoy fresh music with attitude. Lower the background music and let your spirit lift up”",
         },
         {
-          title: "The light in her hair",
+          title: "Relaxing Beats",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Music to share with your friends and colleagues, a collection of laid back beats with enormous impact.”",
         },
         {
-          title: "Pleasant Eyes",
+          title: "Built With ReactJs",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Build with love with ReactJs-Router-Styled Components-Framer Motion for a great UI experience”",
         },
       ],
     },
     {
-      title: "The Mother",
+      title: "Ignite Games",
       mainImg: mother,
       url: "/work/mother",
       secondaryImg: mother2,
@@ -56,7 +56,7 @@ export const ImageState = () => {
       ],
     },
     {
-      title: "The Dog",
+      title: "YouTube Clone",
       mainImg: dog,
       url: "/work/dog",
       secondaryImg: dog2,

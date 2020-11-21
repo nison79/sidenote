@@ -55,7 +55,7 @@ const StyledNav = styled.nav`
     z-index:10;
     a{
         color:white;
-        text-decoration:none;4
+        text-decoration:none;
         font-size:0.9rem;
     }
     ul{
