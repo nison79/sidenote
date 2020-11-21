@@ -34,8 +34,8 @@ const GlobalStyle = createGlobalStyle`
 }
 
     h2 {
-        font-weight:lighter;
-        font-size:3.5rem;
+        font-weight:bold;
+        font-size:4.5rem;
 
 }
 

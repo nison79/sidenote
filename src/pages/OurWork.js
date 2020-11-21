@@ -73,7 +73,11 @@ const StyledWork = styled(motion.div)`
     padding:5rem 10rem;
     h2{
         padding:1rem 0rem;
+        @media (max-width:768px){
+        font-size:2rem;
     }
+    }
+    
 
 `
 const StyledImage = styled(motion.div)`
@@ -89,7 +93,13 @@ const StyledImage = styled(motion.div)`
         width:50%;
         height:70vh;
         object-fit:cover;
-
+        @media (max-width:1100px){
+            width:100%;
+        }
+        @media (max-width:768px){
+            width:100%;
+            height:50%;
+        }
     }
 `
 const Hide = styled.div`

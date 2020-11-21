@@ -27,7 +27,12 @@ const ImageDetails = () => {
         <Details variants = {PageAnimation} initial="hidden" animate="show" exit="exit">
             <Headline>
                 <h2>{image.title}</h2>
-                <img src= {image.mainImg} alt="imageState"></img>
+                    <div className="images">
+                        <img src= {image.mainImg} alt="imageState"></img>
+                        <img src= {image.mainImg} alt="imageState"></img>
+                        <img src= {image.mainImg} alt="imageState"></img>
+                        <img src= {image.mainImg} alt="imageState"></img>
+                    </div>
             </Headline>
             <Awards>
                 {image.awards.map((award) => (
@@ -57,23 +62,59 @@ const Headline = styled.div`
     position:relative;
     h2{
         position: absolute;
-        top:10%;
-        left:50%;
-        transform: translateX(-50% ,-10%)
+        padding:2rem 3rem;
+        margin-bottom:5rem;
+        top:2%;
+        left:0%;
+        transform: translateX(-50% ,-10%);
+        @media (max-width:978px){
+            font-size:2rem;
+            padding:rem 1rem;
+            
+        }
     }
-    img{
-        width:100%;
-        height:70vh;
+    
+    .images {
+        display:flex;
+        grid-template-columns:repeat(auto-fill,minmax(500px,1fr));
+        column-gap:2rem;
+        justify-content:space-between;
+        align-items:center;
+        @media (max-width:978px){
+            flex-direction:column;
+            row-gap:2rem;
+        }
+        img{
+        width:50%;
+        height:50vh;
         object-fit:cover;
+        @media (max-width:978px){
+            object-fit:contain;
+            height:20vh;
+            width:100%;
+            min-height:60vh;
+        }
+        @media (max-width:768px){
+            object-fit:contain;
+            height:20vh;
+            width:100%;
+            min-height:30vh;
+        }
+    }
     }
 `
 
 const Awards = styled.div`
-    min-height:80vh;
+    min-height:60vh;
     display:flex;
-    margin:5rem 10rem;
+    margin:3rem 10rem;
     align-items:center;
     justify-content:space-around;
+    @media(max-width:768px){
+    flex-direction:colum
+
+
+    }
 
 `;
 
@@ -94,11 +135,17 @@ const StyledAward =styled.div`
 `
 
 const ImageDisplay = styled.div`
-    min-height:50vh;
+    min-height:20vh;
     img{
-        width:100%;
-        height:100%;
+        width:80%;
+        height:50vh;
         object-fit:cover;
+    }
+    @media (max-width:978px){
+        object-fit:cover;
+        width:500px;
+        margin-left:3rem;
+        
     }
 
 `
