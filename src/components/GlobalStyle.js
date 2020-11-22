@@ -32,10 +32,14 @@ const GlobalStyle = createGlobalStyle`
         }
 
 }
+    h1{
+        font-size:4.5rem;
+        font-weight:700;
+    }
 
     h2 {
         font-weight:bold;
-        font-size:4.5rem;
+        font-size:3rem;
 
 }
 
