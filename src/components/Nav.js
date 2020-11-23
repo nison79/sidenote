@@ -8,7 +8,7 @@ const Nav = () => {
     const { pathname } = useLocation();
     return (
         <StyledNav>
-            <h1><Link to="/" id="logo" >SideNote</Link></h1>
+            <h3><Link to="/" id="logo" >SideNote</Link></h3>
             <ul>
                 <li>
                     <Link to="/" >About</Link>
@@ -48,7 +48,7 @@ const StyledNav = styled.nav`
     margin: auto;
     justify-content:space-between;
     align-items:center;
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 1rem;
     background-color:#282828;
     position:sticky;
     top:0;
@@ -67,7 +67,7 @@ const StyledNav = styled.nav`
         font-size:1.1rem;
         font-family: 'Poppins' ,san-serif;
         font-weight:bolder;
-        color:  #41EAD4;
+        color:  rgb(210, 20, 150);
         
     }
     li{
@@ -97,7 +97,7 @@ const StyledNav = styled.nav`
 
 const Line = styled(motion.div)`
     height:0.3rem;
-    background:#41EAD4;
+    background:#A4036F;
     width:0%;
     position:absolute;
     bottom:-50%;

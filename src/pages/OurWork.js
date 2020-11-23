@@ -43,6 +43,10 @@ const OurWork = () => {
                 <Link to="/work/girl">
                     <motion.img variants={photoAnim} src= {el1} alt="girl"></motion.img>
                 </Link>
+                <p>Intergrated with the ChillHop Api to explore new music coming straight from 
+                a custom master Object created by your needs. The UI is clean and the priority of this project is the funcitonal side of the app 
+                . Custom Inputs for a better experience through the app, instant visual integrity with both the Library Components and the Cover of the currently playing song
+                </p>
             </StyledImage>
 
             <StyledImage ref={element} variants={fadeAnim} animate={controls} initial="hidden">
@@ -86,7 +90,7 @@ const StyledImage = styled(motion.div)`
         height:0.5rem;
         background: #cccccc;
         margin-bottom:3rem;
-        background:#23d997;
+        background:#A4036F;
     }
 
     img {

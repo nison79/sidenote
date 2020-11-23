@@ -1,7 +1,7 @@
 import React from 'react'
-import home from '../images/home.jpg'
 //styled
 import {About,Description,Image,Hide} from '../styles'
+import styled from 'styled-components'
 //framer motion
 import { motion } from 'framer-motion'
 import titleAnim from '../titleAnim'
@@ -30,15 +30,26 @@ const AboutSection = () => {
                         </motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnim}>life.</motion.h2>
+                        <AboutStyled>
+                            <motion.h2 variants={titleAnim}>life.</motion.h2>
+                        </AboutStyled>
                     </Hide>
                 </motion.div>
-                <motion.p variants={fadeAnim}>Contact me for your web development ideas.</motion.p>
+                    <AboutStyled>
+                        <motion.h3 variants={fadeAnim}>Contact me for your web development ideas.</motion.h3>
+                    </AboutStyled>
                 <motion.button variants={fadeAnim}>Contact</motion.button>
             </Description>
             <Wave />
         </About>
     )
 };
+
+const AboutStyled = styled(motion.div)`
+    h3{
+        padding:2rem 0rem;
+    }
+
+`
 
 export default AboutSection

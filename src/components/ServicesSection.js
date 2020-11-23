@@ -84,6 +84,7 @@ const Card = styled.div`
         display:flex;
         align-items:center;
         width:25px;
+        color: #A4036F;
     }
     img{
         width:40px;
@@ -92,7 +93,7 @@ const Card = styled.div`
         font-size:1.5rem;
         margin-left:1rem;
         
-        color:#41EAD4;
+        color: #A4036F;
         padding:1rem;
     }
     p{

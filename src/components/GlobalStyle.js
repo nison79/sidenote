@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background:#1b1b1b;
+        background:#3F4045;
         font-family: 'Poppins', sans-serif;
         overflow-x:hidden;
 
@@ -21,13 +21,13 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.1rem;
         cursor:pointer;
         padding: 1rem 2rem;
-        border: 3px solid #41EAD4;
+        border: 3px solid rgb(164, 56, 111);
         background: transparent;
         color: white;
         font-family: 'Poppins', sans-serif;
         transition: all 0.5s ease;
         &:hover{
-            background-color: #41EAD4;
+            background-color:rgb(164, 56, 111);
             color:white;
         }
 
@@ -50,6 +50,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
     h3 {
+        font-size:1rem;
         color:white;
 }
 
@@ -59,14 +60,14 @@ const GlobalStyle = createGlobalStyle`
 }
     p{
         padding: 3rem 0rem;
-        color:#ccc;
+        color:#eee;
         font-size:1.4rem;
         line-height:150%;
 }
 
 span {
         font-weight:bold;
-        color:#41EAD4;
+        color:#A4036F;
 }
 
 

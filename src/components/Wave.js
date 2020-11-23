@@ -16,9 +16,6 @@ const Wave = () => {
                 stroke-width="50">
                 </motion.path>
             </svg>
-
-
-            
         </WaveSvg>
     )
 }
