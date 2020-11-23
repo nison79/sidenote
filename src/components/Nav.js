@@ -8,7 +8,7 @@ const Nav = () => {
     const { pathname } = useLocation();
     return (
         <StyledNav>
-            <h3><Link to="/" id="logo" >SideNote</Link></h3>
+            <h3><Link to="/" id="logo" >George Nikoglou</Link></h3>
             <ul>
                 <li>
                     <Link to="/" >About</Link>
@@ -29,7 +29,7 @@ const Nav = () => {
                 </li>
 
                 <li>
-                    <Link to="/contact" >Contact Us</Link>
+                    <Link to="/contact" >Contact</Link>
                     <Line 
                         transition={{duration: 0.5}} 
                         initial={{width:"0%"}} 

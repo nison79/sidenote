@@ -5,7 +5,6 @@ import  PageAnimation  from '../animation'
 import titleAnim  from '../titleAnim'
 import styled from 'styled-components'
 //social icons
-import tweet from '../images/tweet.png'
 import linkedin from '../images/linkedin.png'
 import github from '../images/github.png'
 
@@ -30,26 +29,33 @@ const ContactUs = () => {
                 <Hide>
                     <Social variants= {titleAnim}>
                         <Circle />
-                        <h2>Give Us A Call to :  <span>+30 6945419898</span></h2>
+                        <h2>Give Me A Call  :  <span>+30 6945419898</span></h2>
                     </Social>
                 </Hide>
 
                 <Hide>
                     <Social variants= {titleAnim}>
                         <Circle />
-                        <h2>Send An Email to : <span>georgenison@gmail.com</span></h2>
+                        <h2>Send An Email : <span>georgenison@gmail.com</span></h2>
                     </Social>
                 </Hide>
 
                 <Hide>
                     <Social variants= {titleAnim}>
                         <Circle />
-                        <h2>Social:</h2>
-                        <div className="social-icons">
-                            <a href= "https://github.com/nison79"><img src= {github} alt="github" /></a>
-                            <a href= "https://www.linkedin.com/in/george-nikoglou-54b24532/"><img src= {linkedin} alt="github" /></a>
-                            <a href= "https://twitter.com/gnikoglou79"><img src= {tweet} alt="github" /></a>
-                        </div>
+                            <h2>Github :</h2>
+                            <div className="social-icons">
+                                <a href= "https://github.com/nison79"><img src= {github} alt="github" /></a>
+                            </div>
+                    </Social>
+                </Hide>
+                <Hide>
+                    <Social variants= {titleAnim}>
+                        <Circle />
+                            <h2>Github :</h2>
+                            <div className="social-icons">
+                                <a href= "https://www.linkedin.com/in/george-nikoglou-54b24532/"><img src= {linkedin} alt="github" /></a>
+                            </div>
                     </Social>
                 </Hide>
             </div>

@@ -20,13 +20,16 @@ const AboutSection = () => {
             <Description>
                 <motion.div>
                     <Hide>
-                        <motion.h2 variants={titleAnim}  >           
-                        I work to make 
-                        </motion.h2>
+                        <Intro>
+                            <motion.h1 variants={titleAnim}>Hello,<span>  I'm George.</span></motion.h1>
+                        </Intro>
+                        <motion.h1 variants={titleAnim}  >           
+                        A ReactJS Developer 
+                        </motion.h1>
                     </Hide>
                     <Hide>
                         <motion.h2 variants={titleAnim}>
-                        your <span>ideas </span>come to 
+                        Your <span>apps </span>are coming to
                         </motion.h2>
                     </Hide>
                     <Hide>
@@ -35,15 +38,24 @@ const AboutSection = () => {
                         </AboutStyled>
                     </Hide>
                 </motion.div>
-                    <AboutStyled>
-                        <motion.h3 variants={fadeAnim}>Contact me for your web development ideas.</motion.h3>
-                    </AboutStyled>
-                <motion.button variants={fadeAnim}>Contact</motion.button>
+                    <Button>
+                        <motion.button variants={fadeAnim}>Contact</motion.button>
+                    </Button>
             </Description>
             <Wave />
         </About>
     )
 };
+
+const Intro = styled(motion.div)`
+
+    margin:15rem 0rem;
+`
+
+const Button = styled(motion.div)`
+    margin:8rem 0rem;
+`
+
 
 const AboutStyled = styled(motion.div)`
     h3{

@@ -26,12 +26,13 @@ const ImageDetails = () => {
         {image && (
         <Details variants = {PageAnimation} initial="hidden" animate="show" exit="exit">
             <Headline>
-                <h2>{image.title}</h2>
+                <h2>{image.title} // <span>visit and enjoy</span><a href= {image.urlSite}>{image.siteName}</a></h2>
                     <div className="images">
                         <img src= {image.mainImg} alt="imageState"></img>
-                        <img src= {image.mainImg} alt="imageState"></img>
-                        <img src= {image.mainImg} alt="imageState"></img>
-                        <img src= {image.mainImg} alt="imageState"></img>
+                        <img src= {image.thirdImg} alt="imageState"></img>
+                        
+                        
+                    
                     </div>
             </Headline>
             <Awards>
@@ -73,6 +74,21 @@ const Headline = styled.div`
             
         }
     }
+
+    a{
+        color: white;
+        font-size:4.5rem;
+        margin-left:2rem;
+        &:hover{
+            color:#D2168B;
+        }
+        @media (max-width:1400px){
+            font-size:2.5rem;
+        }
+        @media (max-width:978px){
+            font-size:2rem;
+        }
+    }
     
     .images {
         display:flex;
@@ -87,7 +103,7 @@ const Headline = styled.div`
         img{
         width:50%;
         height:50vh;
-        object-fit:cover;
+        object-fit:contain;
         @media (max-width:978px){
             object-fit:contain;
             height:20vh;
@@ -125,7 +141,7 @@ const StyledAward =styled.div`
     }
     .line {
         width:100%;
-        background:#41EAD4;
+        background:#D2168B;
         height:0.5rem;
         margin: 1rem 0rem;
     }
@@ -135,11 +151,11 @@ const StyledAward =styled.div`
 `
 
 const ImageDisplay = styled.div`
-    min-height:20vh;
+    min-height:40vh;
     img{
-        width:80%;
-        height:50vh;
-        object-fit:cover;
+        width:90%;
+        height:90vh;
+        object-fit:contain;
     }
     @media (max-width:978px){
         object-fit:cover;

@@ -21,13 +21,13 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.1rem;
         cursor:pointer;
         padding: 1rem 2rem;
-        border: 3px solid rgb(164, 56, 111);
+        border: 3px solid #D21596;
         background: transparent;
         color: white;
         font-family: 'Poppins', sans-serif;
         transition: all 0.5s ease;
         &:hover{
-            background-color:rgb(164, 56, 111);
+            background-color:#D21596;
             color:white;
         }
 
@@ -67,7 +67,7 @@ const GlobalStyle = createGlobalStyle`
 
 span {
         font-weight:bold;
-        color:#A4036F;
+        color:#D2168B;
 }
 
 

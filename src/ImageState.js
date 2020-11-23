@@ -1,18 +1,22 @@
 //Import Images
-import el1 from './images/el1.png'
-import el2 from './images/el2.png'
-import mother from './images/mother.png'
-import mother2 from './images/mother2.png'
-import dog from './images/dog.png'
-import dog2 from './images/dog2.png'
+import m1 from './images/m1.png'
+import m2 from './images/m2.png'
+import m3 from './images/m3.png'
+import i1 from './images/i1.png'
+import i2 from './images/i2.png'
+import i3 from './images/i3.png'
+
 
 
 export const ImageState = () => {
   return [
     {
       title: "Music-Player",
-      mainImg: el1,
-      secondaryImg: el2,
+      mainImg: m2,
+      secondaryImg: m1,
+      thirdImg :m3,
+      siteName: "Chill-Player",
+      urlSite: "https://chill-player.netlify.app/" ,
       url: "/work/girl",
       awards: [
         {
@@ -34,22 +38,25 @@ export const ImageState = () => {
     },
     {
       title: "Ignite Games",
-      mainImg: mother,
+      mainImg: i3,
       url: "/work/mother",
-      secondaryImg: mother2,
+      secondaryImg: i2,
+      thirdImg:i1,
+      siteName: "Ignite-Games",
+      urlSite: "https://ignitegames.netlify.app/" ,
       awards: [
         {
-          title: "Stella Ways",
+          title: "Search Your Loved Ones",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“We all have some favorite games to search and explore their history”",
         },
         {
-          title: "Fresh look on.",
+          title: "Clean & Fast ",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“GameRaw provided us the database to explore some of our properties we want to include in our app”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Popular-Upcoming-Searched",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
@@ -57,9 +64,9 @@ export const ImageState = () => {
     },
     {
       title: "YouTube Clone",
-      mainImg: dog,
+      mainImg: m1,
       url: "/work/dog",
-      secondaryImg: dog2,
+      secondaryImg: m1,
       awards: [
         {
           title: "Phivos in action",

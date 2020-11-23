@@ -6,12 +6,12 @@ export const About = styled(motion.div)`
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding: 5rem 10rem;
+    padding: 2rem 5rem;
     color:white;
 
     @media (max-width: 1300px ){
         display:block;
-        padding:20rem 2rem;
+        padding:5rem 2rem;
         text-align:center;
     }
 `;

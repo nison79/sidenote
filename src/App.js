@@ -9,6 +9,7 @@ import GlobalStyle from './components/GlobalStyle'
 import { Switch , Route , useLocation } from 'react-router-dom'
 //animation
 import { AnimatePresence } from 'framer-motion'
+import Footer from './components/Footer'
 
 
 
@@ -35,6 +36,7 @@ function App() {
           </Route>
         </Switch>
       </AnimatePresence>
+      <Footer />
       
       
       
